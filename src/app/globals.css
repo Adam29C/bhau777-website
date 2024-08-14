@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-family: "Urbanist", "Roboto" "sans-serif";
+}
+
+:root {
+  --primary-color: #478667ff;
+  --seconday-color: #eb5757ff;
+  --button-color: #25d366ff;
+  --color-black: #000000;
+  --digit-Color: #1717171;
+  --color-white: #ffff;
+  --star-color: #f9e3c3ff;
+
+  transition: --vh 0.3s ease;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* ------------ Navbar ------------------- */
+
+.navbar {
+  background: transparent;
+
+  margin: 25px 55px;
+}
+
+.navbar-button {
+  border-radius: 40px;
+  border: none;
+  /* font-size: 2rem; */
+  padding: 8px 35px;
+}
+
+.navbar-button:hover {
+  background-color: var(--primary-color);
+  transition: 0.4s ease-in;
+  color: var(--color-white);
+
+  border: 1px solid var(--color-white) !important;
+}
+
+.nav-link {
+  color: var(--color-white) !important;
+}
+
+.nav-link:hover {
+  color: var(--color-white) !important;
+  transition: 0.4s ease-in;
+  border: 0;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* ------------ Navbar ------------------- */
+
+/* ----------------------- */
+
+.Hero-Backkground {
+  background: url("/images/Hero_Banner.svg");
+  position: absolute;
+  width: 100%;
+  top: -20px;
+}
+
+.banner-text {
+  color: var(--color-white);
+  display: flex;
+  /* align-items: center; */
+  padding: 36px 100px 38px !important;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2.7rem;
+}
+.download-button {
+  width: 70%;
+  border-radius: 40px;
+  border: none;
+  font-size: 2rem;
+}
+
+/* ----------------------- */
