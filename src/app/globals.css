@@ -56,13 +56,6 @@ body {
   color: var(--color-white) !important;
 }
 
-.nav-link:hover {
-  color: var(--color-white) !important;
-  transition: 0.4s ease-in;
-  border: 0;
-  outline: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
 
 /* ------------ Navbar ------------------- */
 
@@ -73,6 +66,8 @@ body {
   position: absolute;
   width: 100%;
   top: -20px;
+  border-radius:  0 0 40px 40px;
+  padding-bottom: 20px;
 }
 
 .banner-text {
@@ -92,3 +87,28 @@ body {
 }
 
 /* ----------------------- */
+
+
+.link-25 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  position: relative;
+}
+.link-25::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) scaleY(0);
+  transition: all 0.4s;
+}
+.link-25:hover::before {
+  transform: translateX(-50%) scaleY(1);
+}

@@ -1,8 +1,11 @@
 import React from "react";
 import Header from "./Header";
 import Image from "next/image";
+import HomeContactDetails from "./homeContactDetails";
+
 const HeroSection = () => {
   return (
+    <>
     <div className="Hero-Backkground">
       <Header />
       <div className="container-fluid">
@@ -42,10 +45,14 @@ const HeroSection = () => {
         <div className="row ">
           <div className="col-12 text-center">
             <button className="download-button">Download App</button>
+
           </div>
         </div>
       </div>
+
     </div>
+      </>
+
   );
 };
 
