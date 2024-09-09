@@ -7,13 +7,7 @@ import Link from "next/link";
 import HeaderSvg from "../../Helpers/HeaderSvg";
 import Image from "next/image";
 const Section2 = () => {
- 
-
-  return (
-    <>
-Home
-    </>
-  );
+  return <></>;
 };
 
 export default Section2;

@@ -1,0 +1,450 @@
+@media (min-width: 1281px) {
+  .Hero-Backkground {
+    /* background: url("/images/Hero_Banner.svg")  !; */
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .test {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* .Hero-Backkground {
+    background: url("/images/Banner_tablet.svg") !important;
+  } */
+  .test-2 {
+    padding: 0 66px !important;
+  }
+  .chat-btn {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ----------- Hero Section ------------ */
+  /* 
+  .Hero-Backkground {
+    background: url("/images/Banner_Laptop.svg") !important;
+  } */
+
+  .banner-text {
+    padding: 0px 0px 15px !important ;
+  }
+  /* ----------- Hero Section ------------ */
+
+  .chat-btn {
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    color: var(--primary-color);
+    font-weight: 500;
+    min-width: 100px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 11px;
+  }
+
+  .test-2 {
+    padding: 0 88px !important;
+  }
+
+  .man-image {
+    width: 20% !important;
+  }
+
+  .about-title {
+    font-size: 3.9rem;
+    color: var(--color-white);
+  }
+
+  .about-description {
+    font-size: 1.2rem;
+    color: var(--color-white);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .man-image {
+    width: 62% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #navbarTogglerDemo01 {
+    background: var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0px 2px 13px #ffeed4;
+    color: var(--color-black);
+    padding: 0 10px 10px;
+    position: absolute;
+    right: 14px;
+    text-align: center;
+    top: 95px;
+    transition: 0.3s ease-in-out;
+    width: 239px;
+    z-index: 1;
+  }
+
+  .test {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ----------- Hero Section ------------ */
+
+  .banner-text {
+    padding: 0px 0px 38px !important;
+  }
+
+  .check span {
+    padding: 0 4px;
+    font-size: 36px;
+  }
+  .check {
+    display: flex;
+    justify-content: center;
+  }
+
+  .chat-btn {
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    color: var(--primary-color);
+    font-weight: 500;
+    min-width: 100px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 11px;
+  }
+
+  .card-text-main h6 {
+    font-size: 0.8rem;
+  }
+
+  /* ----------- Hero Section ------------ */
+
+  /* ----------- footer Section ------------ */
+
+  .footer-btn-scroll {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-align {
+    display: block;
+    align-items: baseline !important;
+  }
+
+  .f-size {
+    font-size: 17px;
+  }
+  /* ----------- footer Section ------------ */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* -------------------  Layout ----------------- */
+
+  .content {
+    padding: 3.9em 0;
+  }
+  /* -------------------  Layout ----------------- */
+
+  /* -------------------  Navbar ----------------- */
+
+  .navbar {
+    flex-wrap: nowrap !important;
+    background: transparent;
+    padding: 12px 0px !important;
+    margin: 0 !important;
+  }
+
+  .contact-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Logo_size {
+    margin-left: 30px;
+  }
+
+  /* -------------------  Navbar ----------------- */
+
+  /* ----------- Hero Section ------------ */
+
+  .check span {
+    padding: 0 4px;
+    font-size: 16px;
+  }
+
+  /* .banner-text {
+    padding: 36px 0 38px !important;
+  } */
+
+  .check {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    /* margin-left: 30px; */
+  }
+
+  .man-image {
+    width: 43%;
+  }
+  /* ----------- Hero Section ------------ */
+
+  .test-2 {
+    padding: 0 22px !important;
+  }
+
+  /* ----------- Footer  ------------ */
+
+  .f.footer-sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+  }
+
+  /* ----------- About The Game  ------------ */
+
+  .about-game-main {
+    margin-top: 4px;
+  }
+
+  .about-title {
+    font-size: 1.8rem !important;
+  }
+
+  .sub-title-font-size {
+    font-size: 1.3rem !important;
+  }
+
+  .list-style {
+    display: flex;
+    font-size: 13px;
+  }
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    font-size: 13px;
+  }
+
+  .jcyUcB p {
+    font-size: 13px !important;
+  }
+
+  /* .go-to-bottom {
+    border-radius: 40px;
+    border: none;
+    font-size: 0.6rem;
+    padding: 5px 95px;
+  } */
+
+  /* ----------- About The Game  ------------ */
+
+  /* ----------- Footer  ------------ */
+  .f-size {
+    font-size: 15px !important;
+  }
+
+  .footer-btn-scroll {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-align {
+    display: block;
+    /* align-items: center; */
+  }
+
+  .footer-last-content {
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .Hero-Backkground {
+    background: url("/images/Hero_Banner.svg");
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Hero-Backkground {
+    background: url(/images/Banner_Laptop.svg) !important;
+    height: 445px;
+  }
+  .check span {
+    padding: 0 4px;
+    font-size: 45px;
+  }
+
+  .banner-text {
+    padding: 30px 1px 0px !important;
+  }
+  .man-image {
+    width: 50% !important;
+  }
+  .counting_image {
+    width: 40%;
+  }
+
+  /* ________________ Navbar _______________________ */
+  .navbar {
+    background: transparent;
+    padding: 13px 0px !important;
+    margin: 0px 32px;
+  }
+
+  /* ________________ Navbar _______________________ */
+
+  /* ________________ About-us _______________________ */
+
+  .about-title {
+    font-size: 3.2rem;
+    color: var(--color-white);
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+    color: var(--color-white);
+    margin-bottom: 0px !important;
+  }
+
+  .about-game-main {
+    margin-top: 20px;
+  }
+  .sub-title-font-size {
+ 
+    margin-top: 32px;
+}
+
+
+  /* ________________ About-us _______________________ */
+
+
+  /* ________________ Contact-us _______________________ */
+
+  .margin-tap {
+    margin-top: 2.5rem;
+}
+
+
+  /* ________________ Contact-us _______________________ */
+
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+  .Hero-Backkground {
+    background: url("/images/Banner_Laptop.svg") !important;
+    height: 445px;
+  }
+
+  .banner-text {
+    padding: 0px 0px 0px !important;
+  }
+
+  .counting_image {
+    width: 70%;
+  }
+
+  .man-image {
+    width: 20% !important;
+  }
+
+  .check span {
+    padding: 25px 0 0 4px;
+    font-size: 36px;
+  }
+
+  /* ----------------------------  About Us -------------------------------*/
+
+  .about-title {
+    font-size: 3rem;
+    color: var(--color-white);
+  }
+
+  .about-description {
+    font-size: 1rem;
+    color: var(--color-white);
+    margin-bottom: 0px !important;
+  }
+
+  /* ----------------------------  About Us -------------------------------*/
+
+
+    /* ________________ Contact-us _______________________ */
+
+    .margin-tap {
+      margin-top: 2.5rem;
+  }
+  
+  
+    /* ________________ Contact-us _______________________ */
+  
+    
+}
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+  .check span {
+    padding: 36px 0 0 7px;
+    font-size: 16px;
+  }
+
+  .Hero-Backkground {
+    background: url(/images/Banner_Mobile.svg) !important;
+    height: 465px;
+  }
+  .counting_image {
+    width: 100%;
+  }
+
+  .banner-text {
+    padding: 0px 0px 16px !important;
+  }
+
+  .man-image {
+    width: 44% !important;
+  }
+
+  /* --------------- Calling Section -----------------------------  */
+
+  .Call-button,
+  .whatspp-button {
+    padding: 4px 17px;
+  }
+
+  /* --------------- Calling Section -----------------------------  */
+
+  /* _______________________________  About Section ________________________________________________ */
+
+  .hzeyLF {
+    margin-top: 25px;
+  }
+
+  .about-description {
+    font-size: 0.8rem !important;
+    margin-bottom: 0px !important;
+  }
+
+  .go-to-bottom {
+    border-radius: 40px;
+    border: none;
+    /* font-size: 2rem; */
+    padding: 8px 73px;
+    width: 100%;
+  }
+  /* _______________________________  About Section ________________________________________________ */
+}
