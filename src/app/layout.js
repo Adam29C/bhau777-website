@@ -3,11 +3,11 @@ import "./globals.css";
 import Header from "../component/Header/Header";
 import Footer from "../component/Footer/Footer";
 import Script from "next/script";
-
+import { SiteTitle } from "@/Config/Config";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Bhau777",
+  title: `${SiteTitle}`,
   description: "Online Fantasy Game",
 };
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Bhau777</title>
+        <title>`${SiteTitle}`</title>
         <meta name="description" content="Online Fantasy Game" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"

@@ -16,13 +16,10 @@ const All_Games = () => {
     const res = await GET_ALL_GAMES();
     const res1 = await GET_ALL_STARTLINE_GAMES();
     const res3 = await GET_ALL_JACKPOT_GAME();
-
-    // if (res.status) {
     setgetData(res.data);
     setgetStarlineData(res1.data);
     setgetJackpotData(res3.data);
     setAppUrl(res.appInfo);
-    // }
   };
   useEffect(() => {
     getResponseData();

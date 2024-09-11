@@ -1,7 +1,6 @@
 "use client";
 import React,{useState , useEffect} from "react";
 import { GET_CONTACT } from "../../service/admin.service";
-// import { downloadAPK } from "../../Helpers/DownloadAPK";
 import Link from "next/link";
 
 const Contact_Wp = () => {

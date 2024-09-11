@@ -1,21 +1,25 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+import { SiteTitle } from "@/Config/Config";
+
 const Footer = () => {
   const handleClickUp = () => {
-    const targetElement = document.getElementById("root");
+  
+    const targetElement = document.getElementById("scroll-up");
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <div>
-      {/* <div className="footer-container text-center mt-3 " id="scroll-up"> */}
+    <>
+    <div id="scroll-up"></div>
+
+
       <div className="container-fluid test-2">
         <div className="footer-btn-scroll-main my-5">
-          <button className="footer-btn-scroll" id="scroll-down-button">
+          <button  className="footer-btn-scroll"   onClick={handleClickUp} id="scroll-down-button">
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -39,7 +43,7 @@ const Footer = () => {
               />
             </div>
             <p className="footer-text f-size">
-              Our website is operated by Bhau777 International, a company
+              Our website is operated by {SiteTitle} International, a company
               established under the law of Isle of Man, with registered address
               at 1-10 Ballanoa Meadow IM4-2HT, Isle Of Man, and having its
               gaming sublicense issued by Isle of Man e-Gaming and all rights to
@@ -64,14 +68,14 @@ const Footer = () => {
             <div className="footer-img-sec mb-2">
               <Image
                 src={"/images/Begamble.svg"}
-                alt="Bhau777 Logo"
+                alt={`${SiteTitle} Logo`}
                 width={600}
                 height={300}
                 layout="intrinsic"
               />
               <Image
                 src={"/images/gamble_Therapy.svg"}
-                alt="Bhau777 Logo"
+                alt={`${SiteTitle} Logo`}
                 width={600}
                 height={300}
                 layout="intrinsic"
@@ -81,7 +85,7 @@ const Footer = () => {
         </div>
         <div className="footer-last-content ">
           <p className="copyright-text f-size">
-            Copyright © 2024 - Bhau777. All Rights Reserved
+            Copyright © 2024 - {`${SiteTitle} `}. All Rights Reserved
           </p>
           <p className="f-size">
             <a className="f-size" href="/terms-conditions">
@@ -90,7 +94,9 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </div>
+
+    </>
+
   );
 };
 

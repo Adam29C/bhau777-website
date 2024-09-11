@@ -14,6 +14,9 @@ const ChartsDetails = ({ title, data, chart_color, route }) => {
     }
   };
 
+  
+
+
   return (
     <div>
       <div className="container-fluid test-2 ">
@@ -38,7 +41,7 @@ const ChartsDetails = ({ title, data, chart_color, route }) => {
                             <Link
                               href={{
                                 pathname: abc, 
-                                query: { provider: items.providerName }, 
+                                query: { provider: items.providerName  }, 
                               }}
                             
                               className="Chart-Link m-0"

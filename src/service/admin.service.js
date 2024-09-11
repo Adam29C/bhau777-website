@@ -76,7 +76,7 @@ export async function GET_ALL_STARTLINE_GAMES(data, token) {
 }
 
 //GET ALL GAMES RESULT
-export async function GET_ALL_GAMES_RESULT(data, token) {
+export async function GET_ALL_PANA_RESULT(data, token) {
   try {
     const res = await axios.post(`${Config.Base_url}api/web/panachart`, data, {
      

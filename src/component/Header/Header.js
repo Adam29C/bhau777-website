@@ -1,14 +1,29 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { SiteTitle } from "@/Config/Config";
 const Header = () => {
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
   return (
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container-fluid d-flex justify-content-between">
         <Image
           src={"/images/Logo_green.svg"}
-          alt="Bhau777 Logo"
+          alt={`${SiteTitle} LogoGreen`}
           width={200}
           height={300}
           layout="intrinsic"
@@ -25,14 +40,12 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-             <img
-          src={"/images/Menu_Icon.svg"}
-          alt="Bhau777 Logo"
-          className="toggle-icon"
-
-          layout="intrinsic"
-        />
-          {/* <span class="navbar-toggler-icon"></span> */}
+          <img
+            src={"/images/Menu_Icon.svg"}
+            alt={`${SiteTitle} Menu Icon`}
+            className="toggle-icon"
+            layout="intrinsic"
+          />
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -72,9 +85,7 @@ const Header = () => {
               <button className="navbar-button float-end">Get Free App</button>
             </li>
           </ul>
-          {/* <div className="col-3 ">
-          <button className="navbar-button float-end">Get Free App</button>
-        </div> */}
+         
         </div>
       </div>
     </nav>

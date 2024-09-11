@@ -7,6 +7,7 @@ import {
 } from "../../service/admin.service";
 import ChartsDetails from "@/component/ChartsDetails/ChartsDetails";
 
+
 const page = () => {
   const [AppUrl, setAppUrl] = useState("");
   const [getData, setgetData] = useState([]);

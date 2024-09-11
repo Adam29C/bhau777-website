@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { downloadAPK } from "./DownloadAPK";
 import Modal from "./Modal";
 import Link from "next/link";
+import Image from "next/image";
 
 const Available_Games = ({ gameName, AppUrl, title, abc }) => {
+
   const [show, setShow] = useState(false);
   const [RowData, setRowData] = useState([]);
 
@@ -32,6 +34,8 @@ const Available_Games = ({ gameName, AppUrl, title, abc }) => {
     }
   };
 
+
+         
   const downloadFile = async () => {
     await downloadAPK();
   };
@@ -40,31 +44,15 @@ const Available_Games = ({ gameName, AppUrl, title, abc }) => {
     setRowData(item);
   };
 
-  const Details = (route, name) => {
-    // if (route === "jodi") {
-    //   return `charts/jodi/${name.replace(/\s+/g, "")}`;
-    // } else if (route === "pana") {
-    //   return `charts/pana/${name.replace(/\s+/g, "")}`;
-    // } else if (route === "starline") {
-    //   return `charts/starline/${name.replace(/\s+/g, "")}`;
-    // } else if (route === "jackpot") {
-    //   return `charts/jackpot/${name.replace(/\s+/g, "")}`;
-    // }
-  };
+  const Details = (route, name) => {};
 
   return (
     <div>
       <div className="available-component">
-        <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
-          <img
-            src="/static/media/Star-Icon.d62883a191752f12fe0c3cdc99c2b4be.svg"
-            alt=""
-          />
-          <h5 className="mb-0 ms-2 me-2 font-700">{title}</h5>
-          <img
-            src="/static/media/Star-Icon.d62883a191752f12fe0c3cdc99c2b4be.svg"
-            alt=""
-          />
+        <div className="heding-sec heading-sec-custom  d-flex text-center justify-content-center align-items-center">
+          <Image src={"/images/Star.svg"} alt="" width={30} height={30} />
+          <h2 className="mb-0 ms-2 me-2 font-700">{title}</h2>
+          <Image src={"/images/Star.svg"} alt="" width={30} height={30} />
         </div>
         <div className="container-fluid test-2">
           <div className="row">
@@ -87,10 +75,10 @@ const Available_Games = ({ gameName, AppUrl, title, abc }) => {
 
                           <div></div>
                           <div className="card-text-main ">
-                            <h3 className="color-primary">
+                            <h5 className="color-primary">
                               {item.providerName.toUpperCase()}
-                            </h3>
-                            <h5 className="">{item.providerResult}</h5>
+                            </h5>
+                            <h4 className="">{item.providerResult}</h4>
                             <h6
                               className={`mb-1 ${
                                 showData(item?.gameDetails)?.message ===
@@ -184,14 +172,23 @@ const Available_Games = ({ gameName, AppUrl, title, abc }) => {
                           </div>
                         </div>
 
-                        <div className="bottom-sec d-flex align-items-center justify-content-center mt-2">
+                        <div
+                          className={`bottom-sec d-flex align-items-center ${
+                            abc === "starline" || abc === "jackpot"
+                              ? "justify-content-center"
+                              : "justify-content-evenly "
+                          }  mt-2`}
+                        >
                           {(abc === "main" || abc === "starline") && (
                             <>
                               {abc === "main" ? (
                                 <Link
                                   className="chat-btn a-tag-css"
                                   href={{
-                                    pathname: `charts/pana/${item.providerName.replace(/\s+/g, "")}`,
+                                    pathname: `charts/pana/${item.providerName.replace(
+                                      /\s+/g,
+                                      ""
+                                    )}`,
                                     query: { provider: item.providerName },
                                   }}
                                 >
@@ -201,7 +198,10 @@ const Available_Games = ({ gameName, AppUrl, title, abc }) => {
                                 <Link
                                   className="chat-btn a-tag-css"
                                   href={{
-                                    pathname: `charts/starline/${item.providerName.replace(/\s+/g, "")}`,
+                                    pathname: `charts/starline/${item.providerName.replace(
+                                      /\s+/g,
+                                      ""
+                                    )}`,
                                     query: { provider: item.providerName },
                                   }}
                                 >
@@ -219,7 +219,10 @@ const Available_Games = ({ gameName, AppUrl, title, abc }) => {
                                 <Link
                                   className="chat-btn a-tag-css"
                                   href={{
-                                    pathname: `charts/jodi/${item.providerName.replace(/\s+/g, "")}`,
+                                    pathname: `charts/jodi/${item.providerName.replace(
+                                      /\s+/g,
+                                      ""
+                                    )}`,
                                     query: { provider: item.providerName },
                                   }}
                                 >
@@ -229,7 +232,10 @@ const Available_Games = ({ gameName, AppUrl, title, abc }) => {
                                 <Link
                                   className="chat-btn a-tag-css"
                                   href={{
-                                    pathname: `charts/jackpot/${item.providerName.replace(/\s+/g, "")}`,
+                                    pathname: `charts/jackpot/${item.providerName.replace(
+                                      /\s+/g,
+                                      ""
+                                    )}`,
                                     query: { provider: item.providerName },
                                   }}
                                 >

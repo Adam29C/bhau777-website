@@ -1,46 +1,19 @@
 "use client";
+import { faqData } from "@/Data/data";
+import Image from "next/image";
 import React from "react";
 import { Accordion } from "react-bootstrap";
 const QnA_Section = () => {
-  const faqData = [
-    {
-      question: "What is Bhau777?",
-      answer:
-        "Bhau777 is a Satta Matka Gaming App where you can play games and win jackpots.",
-    },
-    {
-      question: "What games are available on Bhau777?",
-      answer:
-        "Popular Satta Matka games like Kalyan, Sridevi, Milan, Time Bazar, Sara, and Rajdhani.",
-    },
-    {
-      question: "Does Bhau777 have a license?",
-      answer:
-        "Yes, Sara International N.V. has a sub-license in the Isle of Man. All rights that allow the operation of software worldwide.",
-    },
-    {
-      question: "What is the minimum deposit and withdrawal amount?",
-      answer:
-        "In Bhau777, we allow a minimum deposit of Rs 300.00 and withdrawals of Rs 500.00.",
-    },
-    {
-      question: "Why choose Bhau777 among other providers?",
-      answer: "Bhau777 is the most trusted gaming provider worldwide.",
-    },
-  ];
-
   return (
     <>
       <div className="container-fluid test-2">
-        {/* <img
-              src={doller}
-              alt=""
-            /> */}
-        <h4 className="text-center text-bold">Frequently Asked Questions</h4>
-        {/* <img
-              src={doller}
-              alt=""
-            /> */}
+        <div className="heding-sec heading-sec-custom  d-flex text-center justify-content-center align-items-center">
+          <Image src={"/images/Star.svg"} alt="" width={30} height={30} />
+          <h2 className="mb-0 ms-2 me-2 font-700">
+            Frequently Asked Questions
+          </h2>
+          <Image src={"/images/Star.svg"} alt="" width={30} height={30} />
+        </div>
         <div className="row">
           <div className="col-12">
             <div class="accordion" id="accordionExample">
